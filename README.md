@@ -5,11 +5,11 @@
 This project analyzes transactional e-commerce data to better understand
 customer behavior and support retention decisions.
 
-The main goal is to identify: - high-value customers\
-- customers at risk of becoming inactive\
+The main goal is to identify: - high-value customers
+- customers at risk of becoming inactive
 - opportunities to improve customer retention
 
-The project follows a full data science workflow, from raw data to
+The project follows a workflow, from raw data to
 business insights and an interactive dashboard.
 
 ------------------------------------------------------------------------
@@ -30,10 +30,10 @@ their behavior and identifying high-risk groups.
 
 A customer intelligence pipeline was built using Python to:
 
--   Clean and preprocess transactional data\
--   Engineer customer-level features\
--   Segment customers into meaningful groups\
--   Identify inactive customers\
+-   Clean and preprocess transactional data
+-   Engineer customer-level features
+-   Segment customers into meaningful groups
+-   Identify inactive customers
 -   Visualize insights through an interactive dashboard
 
 ------------------------------------------------------------------------
@@ -44,35 +44,35 @@ The project uses the Online Retail dataset, which contains
 transaction-level data from an e-commerce platform.
 
 Each row represents a product within an order and includes: -
-CustomerID\
-- InvoiceNo\
-- InvoiceDate\
-- Quantity\
-- UnitPrice\
+CustomerID
+- InvoiceNo
+- InvoiceDate
+- Quantity
+- UnitPrice
 - Country
 
 From this data, customer-level features were created such as:
 
--   Total revenue\
--   Number of orders\
--   Recency (days since last purchase)\
+-   Total revenue
+-   Number of orders
+-   Recency (days since last purchase)
 -   Average order value
 
 ------------------------------------------------------------------------
 
 ## Project Structure
 
-customer_intelligence_platform/\
-├── app/\
-├── data/\
-│ ├── raw/\
-│ └── processed/\
-├── notebooks/\
-├── outputs/\
-│ └── figures/\
-├── src/\
-├── README.md\
-├── requirements.txt\
+customer_intelligence_platform/
+├── app/
+├── data/
+│ ├── raw/
+│ └── processed/
+├── notebooks/
+├── outputs/
+│ └── figures/
+├── src/
+├── README.md
+├── requirements.txt
 └── .gitignore
 
 ------------------------------------------------------------------------
@@ -81,23 +81,23 @@ customer_intelligence_platform/\
 
 ### Data Cleaning
 
--   Removed missing CustomerIDs\
--   Removed returns (negative quantities)\
--   Filtered invalid prices\
+-   Removed missing CustomerIDs
+-   Removed returns (negative quantities)
+-   Filtered invalid prices
 -   Created revenue column
 
 ### Feature Engineering
 
--   total_orders\
--   total_revenue\
--   recency\
+-   total_orders
+-   total_revenue
+-   recency
 -   average order value
 
 ### Segmentation (RFM)
 
--   Champions → high value, recent\
--   Loyal Customers → frequent buyers\
--   At Risk → declining activity\
+-   Champions → high value, recent
+-   Loyal Customers → frequent buyers
+-   At Risk → declining activity
 -   Others → remaining customers
 
 ### Inactivity Definition
@@ -106,17 +106,17 @@ recency \> 90 days
 
 ### Predictive Modeling
 
--   Logistic Regression\
--   ROC-AUC ≈ 0.77\
+-   Logistic Regression
+-   ROC-AUC ≈ 0.77
 -   Removed recency to prevent leakage
 
 ------------------------------------------------------------------------
 
 ## Key Insights
 
--   Champions generate the majority of revenue\
--   Many customers are inactive → retention problem\
--   At Risk segment contains high-value opportunities\
+-   Champions generate the majority of revenue
+-   Many customers are inactive → retention problem
+-   At Risk segment contains high-value opportunities
 -   Retention should focus on high-value inactive users
 
 ------------------------------------------------------------------------
@@ -144,9 +144,9 @@ behavior.
 
 Features:
 
--   KPI overview\
--   Segment distribution\
--   Revenue breakdown\
+-   KPI overview
+-   Segment distribution
+-   Revenue breakdown
 -   Interactive filtering
 
 ![Dashboard](outputs/figures/dashboard.png)
@@ -169,16 +169,16 @@ streamlit run app/streamlit_app.py
 
 ## Tech Stack
 
--   Python\
--   Pandas\
--   Matplotlib\
--   Scikit-learn\
+-   Python
+-   Pandas
+-   Matplotlib
+-   Scikit-learn
 -   Streamlit
 
 ------------------------------------------------------------------------
 
 ## Author
 
-Luke Rodermond\
-MSc Data Science & Society\
+Luke Rodermond
+Data Science & Society
 Tilburg University
