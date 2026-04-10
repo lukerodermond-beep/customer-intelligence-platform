@@ -59,21 +59,34 @@ From this data, customer-level features were created such as:
 -   Average order value
 
 ------------------------------------------------------------------------
-
 ## Project Structure
 
+```
 customer_intelligence_platform/
+│
 ├── app/
+│   └── streamlit_app.py
+│
 ├── data/
-│ ├── raw/
-│ └── processed/
+│   ├── raw/
+│   │   └── Online Retail.xlsx
+│   └── processed/
+│       └── customer_features.csv
+│
 ├── notebooks/
+│   └── customer_intelligence_full_notebook.ipynb
+│
 ├── outputs/
-│ └── figures/
-├── src/
+│   └── figures/
+│       ├── dashboard.png
+│       ├── inactive_vs_active.png
+│       ├── revenue_per_segment.png
+│       └── segment_distribution.png
+│
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
 
 ------------------------------------------------------------------------
 
